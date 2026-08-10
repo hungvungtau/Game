@@ -668,7 +668,7 @@ public function getNumRows($sqlQuery) {
                      FROM users 
                      WHERE Email = ?
                      AND Password = ?
-                     AND status = 'active'
+                     AND status = '1'
                      LIMIT 1";
 
         $stmt = mysqli_prepare($this->dbConnect, $sqlQuery);
